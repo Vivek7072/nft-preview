@@ -1,0 +1,128 @@
+/* p, h1, ul, li{
+    margin: 0;
+}
+
+.outer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    font-family: 'Hanken Grotesk';
+    font-size: 1.125em;
+    width: 100%;
+    max-width: 45.9375em;
+    height: 31.25em;
+    border-radius: 1.5625em;
+    resize: horizontal;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+img{
+    height: 100%;
+    width: 60%;
+}
+.image-container{
+    width: 45%;
+    border-radius: 1.5625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    background: gray;
+}
+.bottom-container{
+    display: block;
+} */
+*{
+    font-family: 'Outfit';
+}
+body{
+    background: hsl(217, 54%, 11%);
+}
+.outer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-container{
+    padding: 24px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+.top-image{
+    height: 230px;
+    width: 220px;
+    border-radius: 10px;
+}
+.bottom-container{
+    margin-left: 5px;
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+.image-container{
+    width: 220px;
+}
+.text{
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+.name-text{
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+.title:hover{
+    color:hsl(178, 100%, 50%)
+}
+.name-text:hover{
+    color:hsl(178, 100%, 50%);
+}
+.icon-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.display-flex-center{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.avatar{
+    height: 20px;
+    width: 20px;
+}
+.attribution{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.diomand{
+    color:hsl(178, 100%, 50%)
+}
+.top-image:hover{
+    mix-blend-mode: exclusion;
+}
+.top-image:hover + .eye{
+    display: block;
+}
+.eye{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    opacity: .5;     
+}
